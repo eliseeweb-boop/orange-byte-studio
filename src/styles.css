@@ -29,8 +29,8 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --font-display: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Montserrat", sans-serif;
+  --font-mono: "Montserrat", sans-serif;
 }
 
 :root {
