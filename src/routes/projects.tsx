@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
 import { Page } from "@/components/Page";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -15,6 +15,12 @@ export const Route = createFileRoute("/projects")({
 });
 
 function Projects() {
+  const location = useLocation();
+
+  if (location.pathname !== "/projects") {
+    return <Outlet />;
+  }
+
   return (
     <Page eyebrow="// selected work" title="Things I'm proud to have shipped.">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
