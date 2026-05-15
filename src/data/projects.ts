@@ -4,6 +4,16 @@ import cloudImg from "@/assets/project-cloud.jpg";
 import brandImg from "@/assets/project-brand.jpg";
 import marketingImg from "@/assets/project-marketing.jpg";
 import graphicsImg from "@/assets/project-graphics.jpg";
+import gAgro from "@/assets/graphics/logos-agro.jpg";
+import gFinance from "@/assets/graphics/logos-finance.jpg";
+import gShopping from "@/assets/graphics/logos-shopping.jpg";
+import gEngineering from "@/assets/graphics/logos-engineering.jpg";
+import gHotels from "@/assets/graphics/logos-hotels.jpg";
+import gBanners from "@/assets/graphics/banners.jpg";
+import gSocial1 from "@/assets/graphics/social-1.jpg";
+import gSocial2 from "@/assets/graphics/social-2.jpg";
+import gSocial3 from "@/assets/graphics/social-3.jpg";
+import gSocial4 from "@/assets/graphics/social-4.jpg";
 
 export type Project = {
   slug: string;
@@ -20,6 +30,7 @@ export type Project = {
   solution: string;
   outcome: string;
   link?: string;
+  gallery?: { src: string; caption: string }[];
 };
 
 export const projects: Project[] = [
@@ -115,6 +126,18 @@ export const projects: Project[] = [
     solution:
       "Delivered tailored visual systems — from app UI mockups to printed collateral — with reusable component libraries.",
     outcome: "A versatile body of work spanning digital and print design.",
+    gallery: [
+      { src: gAgro, caption: "Agropastoral & Produits Bio — logo collection" },
+      { src: gFinance, caption: "Finance & Service Delivery — logo collection" },
+      { src: gShopping, caption: "Shopping & Beauty — logo collection" },
+      { src: gEngineering, caption: "Engineering & Construction — logo collection" },
+      { src: gHotels, caption: "Hôtels & Restaurants — logo collection" },
+      { src: gBanners, caption: "Web banners & marketing headers" },
+      { src: gSocial1, caption: "Social media campaigns — set 1" },
+      { src: gSocial2, caption: "Social media campaigns — set 2" },
+      { src: gSocial3, caption: "Event & promo posts — set 3" },
+      { src: gSocial4, caption: "Event & promo posts — set 4" },
+    ],
   },
 ];
 
