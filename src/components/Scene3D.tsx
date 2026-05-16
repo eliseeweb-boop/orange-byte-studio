@@ -95,11 +95,11 @@ export function Scene3D({ interactive = false }: { interactive?: boolean }) {
     <Canvas camera={{ position: [0, 0, 6], fov: 50 }} dpr={[1, 2]}>
       <Suspense fallback={null}>
         <ambientLight intensity={0.35} />
-        <directionalLight position={[5, 5, 5]} intensity={1.4} color="#ff7a1a" />
-        <pointLight position={[-5, -5, -5]} intensity={1.2} color="#7c5cff" />
-        <pointLight position={[0, 5, -5]} intensity={0.9} color="#00d4ff" />
+        <directionalLight position={[5, 5, 5]} intensity={1.4} color="#818cf8" />
+        <pointLight position={[-5, -5, -5]} intensity={1.2} color="#4f46e5" />
+        <pointLight position={[0, 5, -5]} intensity={0.9} color="#a5b4fc" />
         <Stars radius={60} depth={50} count={2200} factor={3.5} fade speed={1} />
-        <Sparkles count={80} scale={8} size={3} speed={0.4} color="#ff7a1a" />
+        <Sparkles count={80} scale={8} size={3} speed={0.4} color="#a5b4fc" />
         <Float speed={1.2} rotationIntensity={0.5} floatIntensity={0.9}>
           <Knot />
           <InnerSphere />
