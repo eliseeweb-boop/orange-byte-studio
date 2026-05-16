@@ -36,13 +36,13 @@ function InnerSphere() {
     <mesh ref={ref} scale={0.9}>
       <icosahedronGeometry args={[1, 4]} />
       <MeshDistortMaterial
-        color="#00d4ff"
+        color="#a5b4fc"
         distort={0.6}
         speed={3}
         roughness={0.1}
         metalness={0.8}
-        emissive="#7c5cff"
-        emissiveIntensity={0.4}
+        emissive="#4f46e5"
+        emissiveIntensity={0.5}
         wireframe
       />
     </mesh>
