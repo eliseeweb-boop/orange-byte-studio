@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Nav } from "@/components/Nav";
 import { Scene3D } from "@/components/Scene3D";
-import portrait from "@/assets/portrait.jpg";
+import portrait from "@/assets/portrait.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -38,15 +38,21 @@ function Index() {
             // software developer · graphic designer · marketer
           </motion.p>
 
-          <div className="flex items-start gap-6 mb-6 pointer-events-auto">
-            <motion.img
-              initial={{ opacity: 0, scale: 0.8, rotate: -8 }}
-              animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ duration: 0.7 }}
-              src={portrait}
-              alt="Mr Ngandu"
-              className="hidden sm:block w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover border-2 border-primary glow"
-            />
+          <div className="flex items-end gap-6 mb-6 pointer-events-auto">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="hidden sm:block relative shrink-0"
+            >
+              <div className="absolute -inset-4 rounded-full bg-[conic-gradient(from_180deg,#ff7a1a,#7c5cff,#00d4ff,#ff7a1a)] blur-2xl opacity-60 animate-pulse" />
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-primary via-[#7c5cff] to-[#00d4ff]" />
+              <img
+                src={portrait}
+                alt="Mr Ngandu — Software Developer & Graphic Designer"
+                className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top bg-background/40 backdrop-blur"
+              />
+            </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
