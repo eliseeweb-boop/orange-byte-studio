@@ -20,8 +20,8 @@ function Knot() {
         speed={2.2}
         roughness={0.05}
         metalness={0.9}
-        emissive="#ff7a1a"
-        emissiveIntensity={0.25}
+        emissive="#818cf8"
+        emissiveIntensity={0.35}
       />
     </mesh>
   );
