@@ -15,7 +15,7 @@ function Knot() {
     <mesh ref={ref} scale={1.7}>
       <torusKnotGeometry args={[1, 0.3, 240, 32]} />
       <MeshDistortMaterial
-        color="#7c5cff"
+        color="#4f46e5"
         distort={0.45}
         speed={2.2}
         roughness={0.05}
