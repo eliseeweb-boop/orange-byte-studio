@@ -45,8 +45,8 @@ function Index() {
               transition={{ duration: 0.8 }}
               className="hidden sm:block relative shrink-0"
             >
-              <div className="absolute -inset-4 rounded-full bg-[conic-gradient(from_180deg,#ff7a1a,#7c5cff,#00d4ff,#ff7a1a)] blur-2xl opacity-60 animate-pulse" />
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-primary via-[#7c5cff] to-[#00d4ff]" />
+              <div className="absolute -inset-4 rounded-full bg-[conic-gradient(from_180deg,#4f46e5,#818cf8,#a5b4fc,#4f46e5)] blur-2xl opacity-60 animate-pulse" />
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-primary via-[#818cf8] to-[#a5b4fc]" />
               <img
                 src={portrait}
                 alt="Mr Ngandu — Software Developer & Graphic Designer"

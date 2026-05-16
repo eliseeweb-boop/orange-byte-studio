@@ -15,13 +15,13 @@ function Knot() {
     <mesh ref={ref} scale={1.7}>
       <torusKnotGeometry args={[1, 0.3, 240, 32]} />
       <MeshDistortMaterial
-        color="#7c5cff"
+        color="#4f46e5"
         distort={0.45}
         speed={2.2}
         roughness={0.05}
         metalness={0.9}
-        emissive="#ff7a1a"
-        emissiveIntensity={0.25}
+        emissive="#818cf8"
+        emissiveIntensity={0.35}
       />
     </mesh>
   );
@@ -36,20 +36,20 @@ function InnerSphere() {
     <mesh ref={ref} scale={0.9}>
       <icosahedronGeometry args={[1, 4]} />
       <MeshDistortMaterial
-        color="#00d4ff"
+        color="#a5b4fc"
         distort={0.6}
         speed={3}
         roughness={0.1}
         metalness={0.8}
-        emissive="#7c5cff"
-        emissiveIntensity={0.4}
+        emissive="#4f46e5"
+        emissiveIntensity={0.5}
         wireframe
       />
     </mesh>
   );
 }
 
-const ORBIT_COLORS = ["#ff7a1a", "#7c5cff", "#00d4ff", "#ffffff", "#ff4d8d", "#19f5b5"];
+const ORBIT_COLORS = ["#4f46e5", "#818cf8", "#a5b4fc", "#1e1e5a", "#6366f1", "#c4b5fd"];
 
 function OrbitingCubes() {
   const group = useRef<Group>(null);
@@ -95,11 +95,11 @@ export function Scene3D({ interactive = false }: { interactive?: boolean }) {
     <Canvas camera={{ position: [0, 0, 6], fov: 50 }} dpr={[1, 2]}>
       <Suspense fallback={null}>
         <ambientLight intensity={0.35} />
-        <directionalLight position={[5, 5, 5]} intensity={1.4} color="#ff7a1a" />
-        <pointLight position={[-5, -5, -5]} intensity={1.2} color="#7c5cff" />
-        <pointLight position={[0, 5, -5]} intensity={0.9} color="#00d4ff" />
+        <directionalLight position={[5, 5, 5]} intensity={1.4} color="#818cf8" />
+        <pointLight position={[-5, -5, -5]} intensity={1.2} color="#4f46e5" />
+        <pointLight position={[0, 5, -5]} intensity={0.9} color="#a5b4fc" />
         <Stars radius={60} depth={50} count={2200} factor={3.5} fade speed={1} />
-        <Sparkles count={80} scale={8} size={3} speed={0.4} color="#ff7a1a" />
+        <Sparkles count={80} scale={8} size={3} speed={0.4} color="#a5b4fc" />
         <Float speed={1.2} rotationIntensity={0.5} floatIntensity={0.9}>
           <Knot />
           <InnerSphere />
