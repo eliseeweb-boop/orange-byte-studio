@@ -49,7 +49,7 @@ function InnerSphere() {
   );
 }
 
-const ORBIT_COLORS = ["#ff7a1a", "#7c5cff", "#00d4ff", "#ffffff", "#ff4d8d", "#19f5b5"];
+const ORBIT_COLORS = ["#4f46e5", "#818cf8", "#a5b4fc", "#1e1e5a", "#6366f1", "#c4b5fd"];
 
 function OrbitingCubes() {
   const group = useRef<Group>(null);
